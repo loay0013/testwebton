@@ -1,0 +1,261 @@
+* { /* Gælder alt på hele siden */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+}
+
+/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+}
+
+ul {
+    margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+}
+a{
+    text-decoration: none;
+}
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+a {
+    color: black;
+}
+.nav{
+    background-color: white;
+    height: 100px ;
+    padding-top: 10px;
+}
+.ulnav{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.btnnav{
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+}
+.logo{
+    width: 75%;
+    padding-bottom: 5px;
+}
+.bg-img{
+    background-image:url(../img/topbillede.jpg);
+    height:929px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.text-h{
+    padding: 100px;
+}
+
+.kontakt-s{
+    background-color:#f8dd9f ;
+    height: 570px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+}
+.splitsektion-1{
+    display: flex;
+    flex-direction: row;
+}
+.bg-img-2{
+display: grid;
+    grid-column: 12;
+}
+.bg-img-y{
+    background-image: url(../img/ydelser.jpg);
+    height:800px ;
+    grid-column: 1/2;
+    background-size: cover;
+    text-align: center;
+    padding-top: 400px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 60px;
+    color: white;
+}
+
+.bg-img-s{
+    background-image: url(../img/service.jpg);
+    height:800px ;
+    grid-column: 2/3;
+    background-size: cover;
+    text-align: center;
+    padding-top: 400px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 60px;
+    color: white;
+
+}
+.bg-img-k{
+    background-image:url(../img/kontaktos.jpg) ;
+    height:800px ;
+    grid-column: 3/3;
+    background-size: cover;
+    text-align: center;                    
+    padding-top: 400px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 60px;
+    color: white;
+
+
+}
+
+.btn-h{
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
+.p-h{
+    padding-bottom: 15px;
+    color:white ;
+}
+.h1-h{
+    padding-bottom: 15px;
+    color: white;
+}
+.h2-k{
+    padding-bottom: 15px;
+}
+.p-k{
+    padding-bottom: 15px;
+     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.splitsektion-1-h{
+    padding-bottom: 75px;
+}
+.splitsektion-1-p{
+    padding-bottom: 75px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.splitsektion-text{
+    padding: 100px 0 100px 30px;
+}
+.splitsektion-1-img{
+    width: 50%;
+    padding-top: 100px;
+    height: 50%;
+    padding-bottom: 100px;
+}
+.splitsektion-text-2{
+   padding: 100px 0 100px 30px;
+}
+.bg-k-f{
+    background-color:#f8dd9f ;
+}
+.k-f{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: flex-start;
+}
+input[type=text], select, textarea  {
+    width: 100%;
+    padding: 15px 50px 15px 50px;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: none;
+}
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding:12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+footer{
+    background-color: black;
+}
+
+.footer{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+}
+
+footer p{
+    color: white;
+    padding-bottom: 5px;
+}
+footer ul{
+    flex-direction: column;
+    align-items: normal;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer h5{
+    color: white;
+    padding-bottom: 5px;
+}
+h1, h3{
+    font-family: 'DM Serif Display', serif;
+    font-size: 80px;
+}
+header p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 60px;
+}
+.k-f p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+h5{
+    font-size: 35px;
+    font-family: 'DM Serif Display', serif;
+}
+footer p{
+    font-family: 'Poppins', sans-serif;
+    font-size:16px ;
+    padding: 5px;
+}
+

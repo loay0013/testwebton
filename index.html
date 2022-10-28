@@ -1,0 +1,253 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>webton</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+<nav class="nav">
+    <ul class="ulnav">
+        <li><img class="logo" src="img/rooster-logo.png" alt="logo"></li>
+        <li><a href="#"><p>Menupunkt #1</p></a></li>
+        <li><a href="#"><p>Menupunkt #2</p></a></li>
+        <li><a href="#"><p>Menupunkt #3</p></a></li>
+        <li><a href="#"><p>Menupunkt #4</p></a></li>
+        <li><a href="#"><p>Menupunkt #4</p></a></li>
+        <li><button class="btnnav">BOOK ET MØDE</button></li>
+    </ul>
+</nav>
+
+<header>
+<div class="bg-img">
+    <div class="text-h">
+    <h1 class="h1-h">
+        Making it right entirely in<br>
+        Copenhagen since 1997
+    </h1>
+
+    <p class="p-h">
+        Every product embodies our spirit of family legacy,<br>
+        traditional craftsmanship, and a genuine commitment to sustainability
+    </p>
+
+    <button class="btn-h">
+        BOOK ET MØDE
+    </button>
+    </div>
+</div>
+</header>
+
+<section>
+    <div class="kontakt-s">
+    <h2 class="h2-k">
+        Pursuit of excellence
+    </h2>
+    <p class="p-k">
+        The idea of “form follows function,” a principle associated with the modernist design movement,
+        was the starting place for our Voda collection.
+        Its classic geometry and clean finishes unite into an industrial modern style,
+        crafted for Australian living.
+    </p>
+    <button class="btnnav">
+        KONTAKT OS
+    </button>
+    </div>
+</section>
+<section>
+    <div class="splitsektion-1">
+        <img class="splitsektion-1-img" src="img/splitsektion-1.jpg">
+        <div class="splitsektion-text">
+        <h2 class="splitsektion-1-h">
+            Modern refinement
+        </h2>
+        <p class="splitsektion-1-p">
+            Sammen med vores kunder og den samlede viden fra vores 18.500 arkitekter,
+            ingeniører og øvrige specialister skaber vi løsninger,
+            der adresserer urbanisering, griber digitaliseringens muligheder og gør vores byer og samfund mere bæredygtige.
+            Transforming Society Together.
+        </p>
+        <button class="btnnav">
+            KONTAKT OS
+        </button>
+    </div>
+    </div>
+
+</section>
+
+<section>
+    <div class="bg-img-2">
+        <div class="bg-img-y">Ydelser</div>
+        <div class="bg-img-s">Service</div>
+        <div class="bg-img-k">Kontakt os</div>
+    </div>
+</section>
+
+<section>
+    <div class="splitsektion-1" >
+        <div class="splitsektion-text-2">
+        <h2 class="splitsektion-1-h" >
+            Modern refinement
+        </h2>
+        <p class="splitsektion-1-p">
+            Sammen med vores kunder og den samlede viden fra vores 18.500 arkitekter, ingeniører og øvrige specialister skaber vi løsninger, der adresserer urbanisering, griber digitaliseringens muligheder og gør vores byer og samfund mere bæredygtige.
+
+            Transforming Society Together.
+        </p>
+        <button class="btnnav">
+            KONTAKT OS
+        </button>
+        </div>
+
+        <img class="splitsektion-1-img" src="img/splitsektion-2.jpg" alt="split">
+
+    </div>
+</section>
+<section>
+    <div class="k-f bg-k-f">
+        <div>
+            <h3>
+                Get in touch
+            </h3>
+            <p>
+                <strong>We are awwwards and we are here to serve!How can we help you?</strong>
+            </p>
+            <p>
+                If you have any questions, please contact us through this form.
+
+                Please complete the following fields.
+            </p>
+        </div>
+
+        <div>
+            <form class="form">
+                <input type="text" id="name" name="Navn" placeholder="Dit navn*">
+
+                <input type="text" id="tlf" name="tlf" placeholder="Telefonnummer">
+
+                <input type="text" id="email" name="tlf" placeholder="Email">
+
+
+                <textarea id="subject" name="subject" placeholder="Eventuel besked*" style="height:200px"></textarea>
+
+                <input type="submit" value="KONTAKT OS">
+            </form>
+        </div>
+
+    </div>
+</section>
+
+    <footer class="footer">
+        <div>
+
+            <ul>
+                <li ><a href="#" ><h5>Find os her</h5></a></li>
+                <li ><a href="#" ><p>Rooster Fried Chicken
+                </p></a></li>
+                <li ><a href="#" ><p>Firmavej 109
+                </p></a></li>
+                <li ><a href="#" ><p>2300 Firmaby
+                <br><br>
+                </p></a></li>
+                <li ><a href="#" ><p>Tlf.: +45 12 34 56 78
+                </p></a></li>
+                <li ><a href="#" ><p>Mail: info@roosterfried.dk
+                </p></a></li>
+                <br><br>
+                <li><a href="#"> <p><strong>Åbningstider</strong></p></a></li>
+                <li ><a href="#" ><p>Mandag – fredag: 10.00 – 17.30<br>
+                    Lørdag: 10.00 – 15.00
+
+                </p></a></li>
+            </ul>
+        </div>
+
+        <div >
+            <h5></h5>
+            <ul>
+                <li ><a href="#" ><h5>Information</h5></a></li>
+                <li ><a href="#" ><p>Om Rooster
+                </p></a></li>
+                <li ><a href="#" ><p>Kataloger & film
+                </p></a></li>
+                <li ><a href="#" ><p>Kunde guide
+                </p></a></li>
+                <li ><a href="#" ><p>Opskrifter
+                </p></a></li>
+                <li ><a href="#" ><p>Presse
+                </p></a></li>
+            </ul>
+        </div>
+
+        <div >
+            <h5></h5>
+            <ul>
+                <li ><a href="#" ><h5>About</h5></a></li>
+                <li ><a href="#" ><p>About Us
+                </p></a></li>
+                <li ><a href="#" ><p>Careers
+                </p></a></li>
+                <li ><a href="#" ><p>Terms of Service
+                </p></a></li>
+                <li ><a href="#" ><p>Refund Policy
+                </p></a></li>
+                <li ><a href="#" ><p>Help Center
+                </p></a></li>
+            </ul>
+        </div>
+
+        <div >
+            <h5></h5>
+            <ul>
+                <li ><a href="#" ><h5>Shop</h5></a></li>
+                <li ><a href="#" ><p>Juices
+                </p></a></li>
+                <li ><a href="#" ><p>Supplements
+                </p></a></li>
+                <li ><a href="#" ><p>Pantry
+                </p></a></li>
+                <li ><a href="#" ><p>Locations
+                </p></a></li>
+                <li ><a href="#" ><p>Order Ahead
+                </p></a></li>
+                <li ><a href="#" ><p>Terms of Service
+                </p></a></li>
+                <li ><a href="#" ><p>Refund policy
+                </p></a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+
+</body>
+</html>
